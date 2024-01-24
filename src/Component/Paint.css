@@ -1,0 +1,84 @@
+.width {
+  width: 60%;
+  margin: auto;
+}
+
+.row {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.error {
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left:60px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+.sub {
+  margin-top: 15px;
+  display: block; 
+  margin-left: auto;
+  margin-right: auto; 
+  border-radius: 5px;
+}
+
+
+.text-success {
+  color: #4caf50;
+}
+
+
+
+.container{
+
+  background-color: #f4f5f7;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.editing{
+  display: flex;
+  justify-content:center;
+}
+
+
+/* Responsive styles for buttons */
+@media (max-width: 767px) {
+  .btn {
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+}
+
+
+
+

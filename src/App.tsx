@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Form from './Component/Form'; // Update the path accordingly
+import Table from './Component/Table'; // Update the path accordingly
 
-function App() {
+const App: React.FC = () => {
+  // const [item, setItems] = React.useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    
+    <Router>
+      <div className="App">
+        <Routes>
+          <Route path="/form" element={<Form items={[]} setItems={() => {}} />} />
+          <Route path="/table" element={<Table  />} />
+          <Route path="/form/:id" element={<Form items={[]} setItems={() => {}}  />} />
+
+        </Routes>
+      </div>
+    </Router>
   );
-}
+};
 
 export default App;
